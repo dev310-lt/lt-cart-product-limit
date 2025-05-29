@@ -1,0 +1,33 @@
+lt-cart-product-limit/
+├── app/                            # Remix App logic
+│   ├── components/                 # Shared UI components
+│   │   └── LimitForm.tsx
+│   ├── routes/                     # Pages & API routes
+│   │   ├── (_index).tsx            # Home page
+│   │   ├── settings.tsx            # Admin settings
+│   │   └── api/                    # REST API routes
+│   │       └── save-limits.tsx
+│   ├── lib/                        # Utility files
+│   │   ├── shopify.server.ts       # Shopify API helper
+│   │   ├── db.server.ts            # DB connection (MongoDB)
+│   │   └── logger.server.ts        # Winston or Sentry config
+│   ├── models/                     # DB models
+│   │   └── limits.server.ts
+│   ├── styles/                     # Custom CSS/Polaris styles
+│   │   └── app.css
+│   └── entry.server.tsx
+│
+├── public/                         # Static files (favicon, logo)
+│   └── cart-limit-checker.js      # Script injected into storefront
+│
+├── scripts/                        # Dev scripts
+│   └── setup.sh                    # Bootstrap + setup script
+│
+├── .env                            # Environment variables
+├── .env.example
+├── .gitignore
+├── remix.config.js
+├── shopify.app.toml               # Shopify App CLI config
+├── package.json
+├── README.md
+└── tsconfig.json
